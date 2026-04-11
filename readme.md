@@ -8,7 +8,6 @@
 | 2 | Voltage Sensors | Voltage Sensor Module For Arduino, Robotic | 2 | 1.41 | [🔗](https://shopee.com.my/Voltage-Sensor-Module-For-Arduino-Robotic-i.6674515.7111387321) | 2.82 |
 | 3 | Servo | MG996 Steering Gear MG996R Servo Metal Gear | 18 | 21.81 | [🔗](https://shopee.com.my/product/604942619/45556758343) | 392.58 |
 | 4 | On / Off Switch | Mini Toggle Switch SPST | 1 | 10.96 | [🔗](https://shopee.com.my/-HOT-SALE-10pcs-MTS-101-2-Pin-SPST-ON-OFF-2-Position-6A-250V-AC-for-Mini-for-Toggle-Switches-Kit-i.467495259.58054587486) | 10.96 |
-
 | 5 | Servo Controller | Pololu Maestro 18-Channel Servo Controller | 1 | 320.00 | [🔗](https://example.com) | 320.00 |
 | 6 | Servo Controller | Mini Maestro 12-Channel Servo Controller | 1 | 180.00 | [🔗](https://example.com) | 180.00 |
 | 7 | Connector | Deans Connector (Battery & Switches) | 5 | 8.00 | [🔗](https://example.com) | 40.00 |
