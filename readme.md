@@ -1,3 +1,5 @@
+![Crawling Robot](./4legs.png)
+
 # Crawling Robot
 
 ## Components Cost Table
