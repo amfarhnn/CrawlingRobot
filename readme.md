@@ -24,10 +24,6 @@
 | 17 | Relay | 5V Relay Module | 1 | 15.00 | [🔗](https://example.com) | 15.00 |
 | 17 | Voltage Regulator | LM2596 DC DC Step Down Converter Voltage Regulator LED Display Voltmeter 4.0~40 to 1.3-37V Buck Adapter Adjustable Power Supply | 1 | 6.27 | [🔗]([https://example.com](https://shopee.com.my/LM2596-DC-DC-Step-Down-Converter-Voltage-Regulator-LED-Display-Voltmeter-4.0~40-to-1.3-37V-Buck-Adapter-Adjustable-Power-Supply-i.395116701.24905858490?extraParams=%7B%22display_model_id%22%3A204847014514%2C%22model_selection_logic%22%3A3%7D&sp_atk=81e042a3-9315-4f05-9915-3351c4e2dffa&xptdk=81e042a3-9315-4f05-9915-3351c4e2dffa)) | 6.27 |
 
-
----
-## Reference project
-#### https://github.com/almelnz2005/hexapod/tree/main
 ---
 
 ## 💰 Cost Summary
@@ -44,3 +40,6 @@
 
 ### Old Circuit Diagram (use as a reference)
 ![Circuit](./circuit.png)
+
+## Reference project
+#### https://github.com/almelnz2005/hexapod/tree/main
