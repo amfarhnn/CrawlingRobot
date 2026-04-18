@@ -38,5 +38,9 @@
 | Additional Cost (Shipping/Tax) | 0.00 |
 | **Total Cost** | **872.83** |
 
+### new diagrams
+![Circuit2](./circuit2.png)
 
+
+### Old diagram (use as a reference)
 ![Circuit](./circuit.png)
