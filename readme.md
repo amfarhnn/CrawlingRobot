@@ -26,6 +26,9 @@
 
 
 ---
+## Reference project
+https://github.com/almelnz2005/hexapod/tree/main
+---
 
 ## 💰 Cost Summary
 
