@@ -39,7 +39,7 @@
 | **Total Cost** | **872.83** |
 
 ### new diagrams
-![Circuit2](./circuit2.png)
+![Circuit2](./new_diagrams.png)
 
 
 ### Old diagram (use as a reference)
