@@ -7,7 +7,7 @@
 | No. | Name | Full Name | Quantity | Price/Unit (RM) | Link | Total Price (RM) |
 |-----|------|-----------|----------|-----------------|------|------------------|
 | 3 | Servo | MG996 Steering Gear MG996R Servo Metal Gear | 12 | - | [🔗]([https://shopee.com.my/product/604942619/45556758343](https://my.shp.ee/RkXWawVx)) | 161.89 |
-| 4 | On / Off Switch | Mini Toggle Switch SPST | 1 | ❌ | [🔗](https://shopee.com.my/-HOT-SALE-10pcs-MTS-101-2-Pin-SPST-ON-OFF-2-Position-6A-250V-AC-for-Mini-for-Toggle-Switches-Kit-i.467495259.58054587486) | 10.96 |
+| 4 | On / Off Switch | Mini Toggle Switch SPST | 1 | ❌ | [🔗](https://shopee.com.my/-HOT-SALE-10pcs-MTS-101-2-Pin-SPST-ON-OFF-2-Position-6A-250V-AC-for-Mini-for-Toggle-Switches-Kit-i.467495259.58054587486) | ❌ |
 | 5 | Servo Controller | 18-Channel Servo Controller | 1 | - | [🔗]([https://example.com](https://www.pololu.com/product/1354)) | - |
 | 8 | Limit Switch | Micro Limit Switch SPDT Rocker | 4 | ❌ | [🔗](https://example.com) | ❌ |
 | 9 | Protection | Rubber End Caps | 4 | ❌ | [🔗](https://example.com) | ❌ |
