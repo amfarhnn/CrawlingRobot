@@ -9,9 +9,9 @@
 | 3 | Servo | MG996 Steering Gear MG996R Servo Metal Gear | 12 | - | [🔗]([https://shopee.com.my/product/604942619/45556758343](https://my.shp.ee/RkXWawVx)) | 161.89 |
 | 4 | On / Off Switch | Mini Toggle Switch SPST | 1 | ❌ | [🔗](https://shopee.com.my/-HOT-SALE-10pcs-MTS-101-2-Pin-SPST-ON-OFF-2-Position-6A-250V-AC-for-Mini-for-Toggle-Switches-Kit-i.467495259.58054587486) | ❌ |
 | 5 | Servo Controller | 18-Channel Servo Controller | 1 | - | [🔗]([https://example.com](https://www.pololu.com/product/1354)) | - |
-| 8 | Limit Switch | Micro Limit Switch SPDT Rocker | 4 | ❌ | [🔗](https://example.com) | ❌ |
+| 8 | Limit Switch | Micro Limit Switch, CYT1073 AC 2A 125V 3Pin SPDT Rocker Switches Long Hinge Lever | 4 | ❌ | [🔗](https://example.com) | ❌ |
 | 9 | Protection | Rubber End Caps | 4 | ❌ | [🔗](https://example.com) | ❌ |
-| 10 | Mechanical | Stainless Steel Dowel Pins | 4 | ❌ | [🔗](https://example.com) | ❌ |
+| 10 | Mechanical | Dowel Pin Stainless Steel Shelf Support Pin Metal Fasten Elements Used On Precise Location by Yesallwas (2mm x 22mm 100 Pcs) | 4 | ❌ | [🔗](https://example.com) | ❌ |
 | 11 | Screws | M1.6 Screws Set | 120 | ❌ | [🔗](https://example.com) | ❌ |
 | 12 | Screws | M2.5 Screws Set | 4 | ❌ | [🔗](https://example.com) | ❌ |
 | 14 | Tester | Servo Tester | 1 | ❌ | [🔗](https://example.com) | ❌ |
