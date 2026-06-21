@@ -1,126 +1,135 @@
-![Crawling Robot](./4legs.png)
+# Four-Legged Crawling Robot for HVAC Duct Inspection
 
-# Crawling Robot
+<p align="center">
+  <img src="Render%20Photos/isometric.png" alt="Isometric CAD render of the four-legged crawling robot" width="850">
+</p>
 
-A custom four-legged crawling robot built as a full mechatronics project, covering mechanical design, 3D printing, electronics integration, and embedded control.
+This repository showcases a custom four-legged crawling robot developed for industrial HVAC duct inspection. The robot is designed as a compact, tethered mechatronics platform that can enter rectangular duct environments and support remote visual inspection, LED illumination, and gas-presence early warning.
 
-The project is currently about 70% complete. The hardware components have been acquired, the mechanical design and 3D-printed assembly are complete, and the remaining work is focused on firmware, servo calibration, gait generation, and getting the robot to walk reliably.
+The current prototype focuses on the mechanical platform, 3D-printed assembly, electronics integration, servo actuation, and early control architecture for crawling gait development.
 
-## Project Highlights
+## Project Overview
 
-- Designed and assembled a custom quadruped-style crawling robot platform.
-- Uses 12 metal-gear servo motors for multi-joint leg movement.
-- Includes a dedicated servo controller for stable PWM control.
-- Adds an ESP32 as the onboard control and wireless-capable microcontroller.
-- Integrates power regulation, switching, and safety-related components.
-- Documents the build with rendered images, circuit diagrams, and assembly videos.
+Industrial HVAC ducts can be narrow, dusty, poorly lit, and difficult to inspect safely. This project explores a crawling robotic platform that reduces the need for direct human entry while giving the operator a live view of the duct interior.
 
-## Current Status
+The selected design uses four articulated legs instead of a wheel-only platform. Each leg has three servo-driven joints, giving the robot a total of 12 actuated degrees of freedom for crawling motion, stance control, and in-place turning.
+
+## Key Features
+
+- Four-legged crawling architecture for confined duct inspection
+- 12 MG996R metal-gear servo motors for multi-joint leg movement
+- Modular PETG and PLA 3D-printed mechanical structure
+- Front-mounted camera for real-time visual inspection
+- LED illumination for low-light duct environments
+- MQ-2 gas sensor for non-certified gas-presence early warning
+- ESP32-based low-level motion control
+- Raspberry Pi 4-oriented high-level processing architecture
+- Dedicated multi-channel servo controller for stable PWM output
+- Tethered operation concept for reliable communication and emergency retrieval
+
+## Current Prototype Status
 
 | Area | Status | Notes |
-|------|--------|-------|
-| Mechanical design | Complete | Robot body and leg structure designed for a 3D-printed build. |
-| 3D printing | Complete | Printed parts are available for assembly. |
-| Physical assembly | Complete | Assembly videos are included in this repository. |
-| Components | Complete | Main components have been acquired, including the ESP32. |
-| Circuit planning | Complete / refining | New and older circuit references are documented below. |
-| Firmware | In progress | ESP32 control code and servo coordination are the next major task. |
-| Walking gait | In progress | Servo calibration, leg sequencing, and stability testing are still required. |
+| --- | --- | --- |
+| CAD design | Complete | Full robot, leg modules, and power-module mounting were modeled. |
+| 3D printing | Complete | PETG and PLA parts were printed for the physical prototype. |
+| Mechanical assembly | Complete | Four-leg structure and main body have been assembled. |
+| Electronics integration | In progress | Servo controller, wiring, power regulation, and sensor layout are being refined. |
+| Servo calibration | In progress | Joint limits and neutral positions must be tuned before full gait testing. |
+| Crawling gait | In progress | Locomotion sequencing and stability testing are the next development focus. |
 
-## System Overview
+## System Architecture
 
-The robot is built around a 12-servo leg system. Each leg uses multiple servos to create crawling motion, while the controller stack manages servo signals, power distribution, and future sensor input.
+| Layer | Main Components | Role |
+| --- | --- | --- |
+| Mechanical platform | PETG/PLA body, four modular legs, brackets, fasteners | Supports the robot structure and protects the electronics. |
+| Actuation | 12 MG996R metal-gear servos | Drives hip, knee, and foot/ankle motion for each leg. |
+| Servo control | Multi-channel servo controller | Generates stable PWM signals for coordinated leg movement. |
+| Low-level controller | ESP32 | Handles gait timing, command execution, and sensor input. |
+| High-level processing | Raspberry Pi 4 | Intended for video streaming, interface, logging, and future computer vision. |
+| Inspection payload | Camera, LED lighting, MQ-2 sensor | Provides visual inspection and gas-presence early warning. |
+| Power | 12 V DC supply, buck converter, power switching | Regulates power for servos, controllers, and sensors. |
+| Communication | Tethered connection concept | Improves reliability in metallic duct environments and supports retrieval. |
 
-Planned control architecture:
+## CAD and Prototype Gallery
 
-| Layer | Component | Responsibility |
-|-------|-----------|----------------|
-| Main controller | ESP32 | High-level logic, wireless control, command handling, sensor input, and gait coordination. |
-| Servo control | 18-channel servo controller | Generates stable PWM signals for the 12 servo motors. |
-| Actuation | MG996R metal-gear servos | Drives the leg joints. |
-| Power regulation | LM2596 buck converter | Helps manage voltage levels for electronics and servo power. |
-| Safety/input | Toggle switch and limit switches | Manual power control and potential contact/end-stop feedback. |
+### Rendered CAD Views
 
-## Media
+| Isometric | Front | Top |
+| --- | --- | --- |
+| <img src="Render%20Photos/isometric.png" alt="Isometric render" width="260"> | <img src="Render%20Photos/front.png" alt="Front render" width="260"> | <img src="Render%20Photos/top.png" alt="Top render" width="260"> |
 
-### Robot Render
+| Left | Right | Back |
+| --- | --- | --- |
+| <img src="Render%20Photos/left.png" alt="Left render" width="260"> | <img src="Render%20Photos/right.png" alt="Right render" width="260"> | <img src="Render%20Photos/back.png" alt="Back render" width="260"> |
 
-![Crawling Robot Render](./4legs.png)
+### Assembly Documentation
 
-### Assembly Videos
+| Complete Robot Drawing | Leg Assembly Drawing | Exploded Main Assembly |
+| --- | --- | --- |
+| <img src="Sketching%20Diagrams/Complete%20Assembled.png" alt="Complete assembled drawing" width="260"> | <img src="Sketching%20Diagrams/Leg.png" alt="Leg schematic drawing" width="260"> | <img src="Explode%20and%20Non-exploded%20models/Explode%20Main%20Assembled.png" alt="Exploded main assembly" width="260"> |
 
-These videos show the physical assembly process and demonstrate the mechanical design work behind the project.
+### Physical Prototype
 
-- [Assembly Video 1](./Video/Assembly-1.mp4)
-- [Assembly Video 2](./Video/Assembly-2.mp4)
-- [Assembly Video 3](./Video/Assembly-3.mp4)
+| Front View | Electronics and Buck Converter |
+| --- | --- |
+| <img src="Finished%20Project/Robot%20front.jpg" alt="Finished robot front view" width="330"> | <img src="Finished%20Project/Robot%20with%20buck%20converter.jpg" alt="Finished robot with buck converter" width="330"> |
 
-## Circuit Diagrams
+## Assembly Videos
 
-### New Circuit / Component Planning Diagram
+The project includes assembly videos documenting the physical build process:
 
-![New Circuit Diagram](./new_diagrams.png)
+- [Assembly Video 1](Video/Assembly-1.mp4)
+- [Assembly Video 2](Video/Assembly-2.mp4)
+- [Assembly Video 3](Video/Assembly-3.mp4)
 
-### Older Circuit Reference
+## Main Components
 
-This older diagram is kept as a reference while the current electronics layout is refined.
-
-![Old Circuit Diagram](./circuit.png)
-
-## Bill of Materials
-
-| No. | Component | Full Name / Description | Quantity | Cost / Notes |
-|-----|-----------|--------------------------|----------|--------------|
-| 1 | Microcontroller | ESP32 development board | 1 | Added to the project as the main controller. |
-| 2 | Servo motor | MG996R metal-gear servo | 12 | RM 161.89 total recorded. |
-| 3 | Servo controller | 18-channel servo controller | 1 | Used for driving the servo motors. |
-| 4 | Power supply | 12V 3A DC power supply | 1 | Main external power source. |
-| 5 | Voltage regulator | LM2596 DC-DC buck converter with voltmeter | 1 | Used to regulate voltage where needed. |
-| 6 | Main switch | Mini toggle switch SPST | 1 | Manual power control. |
-| 7 | Limit switch | Micro limit switch, 3-pin SPDT long hinge lever | 4 | For contact or end-stop sensing. |
-| 8 | Protection | Rubber end caps | 4 | Mechanical protection for contact points. |
-| 9 | Mechanical pin | 2 mm x 22 mm stainless steel dowel pin | 4 | Mechanical fastening and alignment. |
-| 10 | Screws | M1.6 screw set | 120 | Mechanical assembly. |
-| 11 | Screws | M2.5 screw set | 4 | Mechanical assembly. |
-| 12 | Tester | Servo tester | 1 | Useful for manual servo testing and calibration. |
+| Component | Quantity | Purpose |
+| --- | ---: | --- |
+| MG996R metal-gear servo motor | 12 | Leg joint actuation |
+| ESP32 development board | 1 | Low-level control and command handling |
+| Raspberry Pi 4 | 1 | High-level processing and video-oriented architecture |
+| Multi-channel servo controller | 1 | PWM generation for servo control |
+| DC-DC buck converter | 1 | Voltage regulation for electronics and servo system |
+| Camera module | 1 | Live visual inspection |
+| LED lighting | 1 set | Illumination inside dark duct spaces |
+| MQ-2 gas sensor | 1 | Gas-presence early warning |
+| 3D-printed PETG/PLA structure | 1 set | Robot body, legs, brackets, and mounts |
 
 ## Development Roadmap
 
-The remaining work is focused on bringing the hardware to life through software and testing.
+1. Finalize electronics mounting and cable routing.
+2. Calibrate all servo neutral positions and safe angle limits.
+3. Validate one-servo, one-leg, and four-leg motion tests.
+4. Develop stable crawling gait sequences.
+5. Test power stability during multi-servo movement.
+6. Integrate live video, LED control, and MQ-2 warning feedback.
+7. Perform controlled duct-environment movement testing.
+8. Record a complete walking and inspection demonstration.
 
-1. Create ESP32 firmware project structure.
-2. Map each servo channel to the correct leg and joint.
-3. Calibrate servo center positions and safe movement limits.
-4. Build basic single-servo and single-leg motion tests.
-5. Implement a crawling gait sequence.
-6. Add wireless control or command input through the ESP32.
-7. Test power stability while multiple servos move under load.
-8. Record a walking demo and update this README with final results.
+## Contributors
 
-## Engineering Notes
+Project contributor profiles are available here:
 
-- The servo power rail should be handled separately from sensitive logic power where possible.
-- All controller boards and servo power references should share a common ground.
-- The servo controller jumper and servo power wiring should be checked carefully before powering the full robot.
-- Initial testing should start with one servo, then one leg, before moving all 12 servos together.
-- Servo current draw can spike during movement, so power stability should be tested before full walking trials.
+[https://idp1.carrd.co/](https://idp1.carrd.co/)
 
-## Repository Structure
+Project team:
 
-```text
-.
-|-- readme.md
-|-- 4legs.png
-|-- new_diagrams.png
-|-- circuit.png
-`-- Video/
-    |-- Assembly-1.mp4
-    |-- Assembly-2.mp4
-    `-- Assembly-3.mp4
-```
+- Muhammad Naufal Hakimi Bin Irwan Affandi
+- Ahmad Nizar Bin Amzah
+- Abdullah Hasan Bin Sidek
+- Amir Farhan Bin Ghaffar
+- Azmi Bin Basharudin
+
+## Notes
+
+- The MQ-2 module is used as an early-warning sensor only and is not a certified gas-safety instrument.
+- The robot is a development prototype; reliable crawling performance depends on servo calibration, gait tuning, and testing.
+- Report documents, brochure drafts, and internal submission files are intentionally excluded from this public showcase repository.
 
 ## Reference
 
-This project uses the following project as one of its references and inspirations:
+This project was also inspired by open-source legged robot and hexapod development work, including:
 
-https://github.com/almelnz2005/hexapod/tree/main
+[almelnz2005/hexapod](https://github.com/almelnz2005/hexapod/tree/main)

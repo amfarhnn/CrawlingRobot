@@ -1,0 +1,16 @@
+# Report, submission, and brochure artifacts
+*.docx
+*.pdf
+*.pptx
+*report*
+*Report*
+brochure-content.md
+
+# Generated report helper files
+generate_report_sections.py
+_generated_report_assets/
+
+# Local editor and OS noise
+.DS_Store
+Thumbs.db
+desktop.ini
